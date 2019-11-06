@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    fetch("http://www.omdbapi.com/?apikey=304d4af1&page=1&s='titanic'")
+    fetch("https://www.omdbapi.com/?apikey=304d4af1&page=1&s='titanic'")
     .then(response => response.json())
     .then(movies => this.setState({movies: movies.Search, isloadingMovies: false}));
   }
